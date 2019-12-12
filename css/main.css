@@ -5,13 +5,15 @@ html {
 body {
   background-color: #fff;
   margin: 0;
+  position: relative;
 }
 
 h1 {
   color: #fff;
+  font-size: 2em;
   font-family: "Sigmar One", Georgia;
   text-align: left;
-  margin: 0;
+  margin: .2em;
 }
 
 h2 {
@@ -19,10 +21,13 @@ h2 {
   font-family: "Sigmar One", Georgia;
   color: #fff;
 }
+main {
+  background-image: url("http://via.placeholder.com/600x300");
+  background-size: cover;
+}
 
 p {
   text-align: left;
-  color: #2f2d13;
 }
 
 ul {
@@ -37,8 +42,10 @@ ol {
   margin: .3em;
   padding: 0;
 }
-
-a {
+.navigation {
+  margin-top: 2em;
+}
+.nav-item a{
   color: #fff;
   background-color: #8d0c28;
   text-decoration: none;
@@ -47,14 +54,17 @@ a {
   border-radius: 4px;
 }
 
-a:hover {
+.nav-item a:hover {
   background-color: #fbd0d9;
+  color: #222;
 }
 
 footer, header {
   background-color: #864313;
 }
-
+ header {
+   padding: 1.5em .1em;
+ }
 nav li {
   display: inline-block;
   border-radius: 4px;
@@ -70,7 +80,10 @@ footer p {
 }
 
 footer {
+  display: block;
+  width: 100%;
   padding: 1em 0;
+  bottom: 0;
 }
 
 .img {
@@ -93,4 +106,37 @@ img {
 
 .nav .current {
   background-color: #2f2d13;
+}
+.order-svg {
+  height: 200px;
+  width: 200px;
+}
+.image-top {
+  margin: 2em auto;
+  width: 25em;
+  height: auto;
+}
+.contact {
+  text-align: center;
+  color: #fff;
+}
+.container {
+  position: relative;
+  margin: 5em auto;
+  width: 40%;
+}
+.menu-img {
+  position: relative;
+  height: 20em;
+}
+.text-box {
+  padding: 2em;
+  position: absolute;
+  width: 50%;
+  height: 5em;
+  padding: 1em;
+  right: 1em;
+  bottom: 1em;
+  background-color: #222;
+  color:#fff;
 }
